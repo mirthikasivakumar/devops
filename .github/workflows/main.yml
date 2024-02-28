@@ -1,0 +1,17 @@
+name: Running a python script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a script
+        run: python addition.py
+
+
+  
